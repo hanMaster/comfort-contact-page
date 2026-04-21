@@ -78,3 +78,9 @@ ul>li {
     font-family: "Benzin", serif;
     border-top-right-radius: 15px;
 }
+
+a {
+    text-decoration: none;
+    font-family: "Benzin", serif;
+    color: #555;
+}
