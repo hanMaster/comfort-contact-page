@@ -84,3 +84,55 @@ a {
     font-family: "Benzin", serif;
     color: #555;
 }
+
+.schedule-title {
+    margin-top: 16px;
+}
+
+.collapsible {
+    margin-top: 28px;
+}
+
+.collapsible > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    list-style: none;
+    padding: 4px 0;
+}
+
+.collapsible > summary::-webkit-details-marker {
+    display: none;
+}
+
+.collapsible > summary h3 {
+    flex: 1;
+    margin: 0;
+}
+
+.toggle-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #46694a;
+    border-radius: 50%;
+    font-family: "Benzin", serif;
+    font-size: 1.5em;
+    line-height: 1;
+    transition: transform 0.25s ease;
+    user-select: none;
+}
+
+.collapsible[open] > summary .toggle-icon {
+    transform: rotate(45deg);
+}
+
+.collapsible > :not(summary) {
+    margin-top: 8px;
+}
